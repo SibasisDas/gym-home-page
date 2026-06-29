@@ -29,9 +29,8 @@ header{
     top:0;
     left:0;
     width:100%;
-    padding:0px 60px;
-    margin-top: -20px;
-    padding-bottom: -50px;
+    height:90px;
+    padding:0 60px;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -40,14 +39,12 @@ header{
     z-index:1000;
 }
 
-.logo{
-    display:flex;
-    align-items:center;
-    gap:8px;
-    font-size:22px;
-    font-weight:800;
-    color:#ff4a2d;
+.logo img{
+    width:100px;
+    height:auto;
+    display:block;
 }
+
 
 nav ul{
     display:flex;
@@ -1616,39 +1613,533 @@ button:hover{
     box-shadow:0 8px 20px rgba(0,204,102,.4);
     color:#000;
 }
+
+/* ================= BIG SCREEN (1400px+) ================= */
+
+@media (min-width:1400px){
+
+.hero{
+    background-size:cover;
+}
+
+.hero-content h1{
+    font-size:72px;
+}
+
+.stats h2{
+    font-size:65px;
+}
+
+.about,
+.classes,
+.pricing,
+.trainers,
+.member-benefits,
+.why-choose,
+.testimonial-section,
+.contact,
+.footer{
+    padding-left:120px;
+    padding-right:120px;
+}
+
+}
+
+
+/* ================= LAPTOP ================= */
+
+@media (max-width:1200px){
+
+header{
+    padding:15px 40px;
+}
+
+.hero{
+    padding:0 40px;
+}
+
+.hero-content h1{
+    font-size:52px;
+}
+
+.about{
+    gap:40px;
+}
+
+.classes-grid{
+    gap:20px;
+}
+
+.pricing-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.trainers-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.footer-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+/* ================= TABLET ================= */
+
+.mobile-title,
+.menu-toggle{
+    display:none;
+} 
+@media (max-width:992px){
+
+header{
+    padding:15px 25px;
+}
+
+nav ul{
+    gap:18px;
+}
+
+.hero{
+    padding:80px 25px;
+    min-height:auto;
+    background-size:cover;
+}
+
+.hero-content{
+    max-width:100%;
+}
+
+.hero-content h1{
+    font-size:42px;
+    margin-top:0;
+}
+
+.stats{
+    position:static;
+    margin-top:40px;
+    text-align:left;
+}
+
+.cards-slider{
+    position:relative;
+    left:0;
+    bottom:0;
+    width:100%;
+    margin-top:30px;
+}
+
+.about{
+    grid-template-columns:1fr;
+    padding:60px 25px;
+}
+
+.bmi-section{
+    flex-direction:column;
+    padding:60px 25px;
+}
+
+.bmi-image{
+    margin-top:40px;
+}
+
+.classes-grid{
+    grid-template-columns:1fr;
+}
+
+.pricing-grid{
+    grid-template-columns:1fr;
+}
+
+.stories{
+    grid-template-columns:1fr;
+}
+
+.trainers-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.benefits-grid{
+    grid-template-columns:1fr;
+}
+
+.why-container{
+    grid-template-columns:1fr;
+}
+
+.why-img img{
+    height:auto;
+}
+
+.testimonial-grid{
+    grid-template-columns:1fr;
+}
+
+.contact-wrapper{
+    grid-template-columns:1fr;
+}
+
+.footer-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+header{
+    flex-direction:column;
+    padding:15px;
+    gap:15px;
+    margin-top:0;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.hero{
+    padding:120px 20px 60px;
+    text-align:center;
+}
+
+.hero-content h1{
+    font-size:34px;
+}
+
+.hero-content p{
+    font-size:16px;
+    line-height:1.6;
+}
+
+.hero-buttons{
+    flex-direction:column;
+}
+
+.hero-buttons button{
+    width:100%;
+}
+
+.cards-slider{
+    display:none;
+}
+
+.stats{
+   display:none;
+}
+
+.about{
+    padding:50px 20px;
+}
+
+.about h2{
+    font-size:34px;
+}
+
+.about-cards{
+    grid-template-columns:1fr;
+}
+
+.bmi-content h1{
+    font-size:36px;
+}
+
+.bmi-inputs{
+    flex-direction:column;
+}
+
+.classes-header{
+    flex-direction:column;
+    text-align:center;
+    gap:20px;
+}
+
+.story-card{
+    grid-template-columns:1fr;
+}
+
+.story-video{
+    width:100%;
+    height:220px;
+}
+
+.trainers-grid{
+    grid-template-columns:1fr;
+}
+
+.benefits-left h2,
+.why-content h2,
+.testimonial-head h2,
+.stories-left h2{
+    font-size:36px;
+}
+
+.why-features{
+    grid-template-columns:1fr;
+}
+
+.help-box{
+    position:static;
+    margin-top:20px;
+}
+
+.testimonial-card{
+    grid-template-columns:1fr;
+}
+
+.testimonial-video{
+    width:100%;
+    height:220px;
+}
+
+.grid{
+    grid-template-columns:1fr;
+}
+
+.banner{
+    padding:40px 20px;
+    height:auto;
+}
+
+.banner h1{
+    font-size:36px;
+}
+
+.footer{
+    padding:40px 20px;
+}
+
+.footer-container{
+    grid-template-columns:1fr;
+}
+
+button{
+    width:100%;
+}
+
+}
+
+/* ================= MOBILE NAVBAR ================= */
+/* MOBILE NAVBAR */
+@media (max-width:768px){
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:70px;
+    padding:0 15px;
+    display:flex;
+    flex-direction:row; 
+    align-items:center;
+    justify-content:space-between;
+    background:#111;
+    z-index:9999;
+    margin-top:0;
+}
+
+/* Left */
+.logo{
+    width:33.33%;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+.logo img{
+    width:45px;
+    height:auto;
+}
+
+/* Center */
+.mobile-title{
+    display:flex;
+    width:33.33%;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    font-size:18px;
+    font-weight:700;
+    text-align:center;
+}
+
+/* Right */
+.menu-toggle{
+    display:flex;
+    width:33.33%;
+    justify-content:flex-end;
+    align-items:center;
+    color:#fff;
+    font-size:30px;
+    cursor:pointer;
+}
+
+/* Menu */
+nav{
+    display:none;
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    background:#111;
+}
+
+nav.active{
+    display:block;
+}
+
+nav ul{
+    display:flex;
+    flex-direction:column;
+}
+
+nav ul li a{
+    display:block;
+    padding:15px;
+    text-align:center;
+    color:#fff;
+}
+
+html, body{
+    overflow-x:hidden;
+    width:100%;
+}
+
+}
+
+@media (max-width:768px){
+    .talk-btn{
+        display:none;
+    }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width:480px){
+
+.logo{
+    font-size:18px;
+}
+
+.hero-content h1{
+    font-size:28px;
+}
+
+.hero-content p{
+    font-size:14px;
+}
+
+.about h2,
+.classes-header h2,
+.pricing h2,
+.stories-left h2,
+.trainers h2,
+.benefits-left h2,
+.why-content h2,
+.testimonial-head h2,
+.contact-left h2{
+    font-size:28px;
+}
+
+.stats h2{
+    font-size:34px;
+}
+
+.stats p{
+    font-size:16px;
+}
+
+.price{
+    font-size:34px;
+}
+
+.story-video,
+.testimonial-video{
+    height:200px;
+}
+
+.bmi-content h1{
+    font-size:30px;
+}
+
+.banner h1{
+    font-size:28px;
+}
+
+}
 </style>
 </head>
 
 <body>
 
 <header>
-    <div class="logo"><img src="images/logo.png" alt="" width="150px" height="115px"></div>
-    <nav>
+
+    <!-- Left -->
+    <div class="logo">
+        <img src="images/logo.png" alt="Logo">
+    </div>
+
+    <!-- Center -->
+    <div class="mobile-title">
+        GYM WEBSITE
+    </div>
+
+    <!-- Right -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+        &#9776;
+    </div>
+
+    <nav id="navbar">
         <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">CLASSES</a></li>
-            <li><a href="#">REVIEWS</a></li>
-            <li><a href="#">MEMBERSHIP</a></li>
-            <li><a href="#">TRAINERS</a></li>
+             <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#class">CLASSES</a></li>
+            <li><a href="#story">REVIEWS</a></li>
+            <li><a href="#member">MEMBERSHIP</a></li>
+            <li><a href="#train">TRAINERS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
-    <button class="talk-btn">LET'S TALK</button>
+
+     <button class="talk-btn" onclick="scrollToContact()">LET'S TALK </button>
 </header>
 
-<section class="hero">
+<script>
+
+function toggleMenu() {
+    if (window.innerWidth <= 768) {
+        document.getElementById("navbar").classList.toggle("active");
+    }
+}
+
+
+
+function scrollToContact() {
+    document.getElementById("contact").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+</script>
+
+<section class="hero" id="home">
     <div class="hero-content">
         <h1>BUILD <span>POWER</span>,<br>GAIN CONFIDENCE</h1>
-        <p><pre>
-           Join our premium fitness centre and achieve your fitness goals 
-           with expert trainers, modern equipment, and personalised workout programs. 
-           We focus on results, safety, and professional guidance.
-
-           Enjoy a motivating environment, advanced facilities, and 
-           customised plans designed to improve strength, endurance,
-           and overall health, helping you maintain an active and balanced lifestyle.
-       </pre> </p>
-
+        <p>
+          Join our premium fitness centre and achieve your fitness goals
+          with expert trainers, modern equipment, and personalised workout programs.
+          We focus on results, safety, and professional guidance.
+          <br><br>
+          Enjoy a motivating environment, advanced facilities, and customised
+          plans designed to improve strength, endurance, and overall health,
+          helping you maintain an active and balanced lifestyle.
+        </p>
         <div class="hero-buttons">
             <button class="primary-btn">GET FREE TRIAL</button>
             <button class="secondary-btn">LEARN MORE</button>
@@ -1677,7 +2168,7 @@ button:hover{
 
 </section>
 
-<section class="about">
+<section class="about" id="about">
     <img src=https://img.freepik.com/free-photo/full-body-portrait-athletic-shirtless-male-doing-biceps-workouts-with-dumbbells-gym-club_613910-1176.jpg?semt=ais_hybrid&w=740&q=80>
     <div>
         <h4>ABOUT US</h4>
@@ -1780,7 +2271,7 @@ btn.addEventListener("click", () => {
 
 
 
-<section class="classes">
+<section class="classes" id="class">
 
     <div class="classes-header">
         <div>
@@ -1843,7 +2334,8 @@ btn.addEventListener("click", () => {
     </div>
 </section>
 
-<section class="pricing">
+<section class="pricing" id="member"
+>
 
     <h4>OUR PLANS</h4>
     <h2>Flexible Memberships<br>For Every Fitness Level</h2>
@@ -1928,7 +2420,7 @@ btn.addEventListener("click", () => {
 </section>
 
 
-<section class="member-benefits">
+<section class="member-benefits" >
 
     <div class="benefits-grid">
 
@@ -1999,7 +2491,7 @@ btn.addEventListener("click", () => {
     </div>
 </section>
 
-<section class="stories">
+<section class="stories" id="story">
 
     <!-- LEFT -->
     <div class="stories-left">
@@ -2099,7 +2591,7 @@ playBtns.forEach(btn => {
 </section>
 
 
-<section class="trainers">
+<section class="trainers" id="train">
 
     <h5>OUR TRAINERS</h5>
     <h2>MEET THE EXPERTS<br>BEHIND YOUR SUCCESS</h2>
@@ -2237,7 +2729,7 @@ playBtns.forEach(btn => {
 </section>
 
 
-<section class="testimonial-section">
+<section class="testimonial-section" >
 
     <div class="testimonial-head">
         <h5>MEMBER STORIES</h5>
@@ -2345,7 +2837,7 @@ videoBoxes.forEach(box => {
 </section>
 
 
-<section class="contact">
+<section class="contact" id="contact">
   <div class="contact-wrapper">
 
     <!-- LEFT CONTENT -->
