@@ -1805,7 +1805,7 @@ nav ul{
 }
 
 .hero{
-    padding:120px 20px 60px;
+    padding:120px 20px 20px;
     text-align:center;
 }
 
@@ -1826,9 +1826,34 @@ nav ul{
     width:100%;
 }
 
+@media (max-width:768px){
+
 .cards-slider{
-    display:none;
+    position:relative !important;
+    left:0 !important;
+    bottom:0 !important;
+
+    width:100% !important;
+    height:auto !important;
+
+    margin-top:20px;
+    overflow:hidden;
 }
+
+.slider-track{
+    display:flex;
+    gap:10px;
+    width:max-content;
+}
+
+.slider-track img{
+    width:140px;
+    height:100px;
+    object-fit:cover;
+}
+
+}
+
 
 .stats{
    display:none;
@@ -2144,26 +2169,30 @@ function scrollToContact() {
             <button class="primary-btn">GET FREE TRIAL</button>
             <button class="secondary-btn">LEARN MORE</button>
         </div>
-    </div>
 
-    <div class="stats">
-        <h2>98+</h2><p>Health Programs</p>
-        <h2>40K+</h2><p>Active Members</p>
-        <h2>200+</h2><p>Expert Trainers</p>
-    </div>
-
-    <div class="cards-slider">
-    <div class="slider-track">
-        <!-- original -->
+        <!-- Slider Here -->
+     <div class="cards-slider">
+      <div class="slider-track">
         <img src="https://thumbs.dreamstime.com/b/muscular-man-working-out-gym-bodybuilder-strong-male-111321972.jpg">
         <img src="https://img.freepik.com/free-photo/full-body-portrait-athletic-shirtless-male-doing-biceps-workouts-with-dumbbells-gym-club_613910-1176.jpg?semt=ais_hybrid&w=740&q=80">
         <img src="https://img.freepik.com/premium-photo/muscular-guy-with-dumbbells-gym-club_613910-11754.jpg">
 
-        <!-- duplicate (important for infinite loop) -->
         <img src="https://thumbs.dreamstime.com/b/muscular-man-working-out-gym-bodybuilder-strong-male-111321972.jpg">
         <img src="https://img.freepik.com/free-photo/full-body-portrait-athletic-shirtless-male-doing-biceps-workouts-with-dumbbells-gym-club_613910-1176.jpg?semt=ais_hybrid&w=740&q=80">
         <img src="https://img.freepik.com/premium-photo/muscular-guy-with-dumbbells-gym-club_613910-11754.jpg">
+       </div>
+      </div>
     </div>
+
+
+
+
+<!-- Stats Here -->
+<div class="stats">
+    <h2>98+</h2><p>Health Programs</p>
+    <h2>40K+</h2><p>Active Members</p>
+    <h2>200+</h2><p>Expert Trainers</p>
+</div>
 </div>
 
 </section>
