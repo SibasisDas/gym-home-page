@@ -188,7 +188,7 @@ Gym-Website/
 
 Visit the live website here:
 
-https://sibasisdas.github.io/gym-home-page/
+https://sibasisdas.github.io/Gym-Home-Page/
 
 > **Note:** If the website is not available yet, enable GitHub Pages in your repository settings. After publishing, this URL will become active.
 
